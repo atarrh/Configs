@@ -46,7 +46,7 @@ myKeys x = M.union (keys defaultConfig x) (M.fromList (keysToAdd x))
 
 
 main = do
-    bar <- spawnPipe "~/Documents/panel.sh | bar"
+    bar <- spawnPipe "~/Dropbox/Configs/panel.sh | bar"
     --bar <- spawnPipe "~/Documents/panel.sh | bar -f {'xft:Inconsolata','-*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1'}"
     --bar <- spawnPipe "~/Documents/panel.sh | bar -f {'-*-nimbus mono l-medium-r-*-*-*-*-*-*-*-*-*-*','-*-terminus-medium-*-*-*-*-140-*-*-*-*-iso8859-1'}"
 

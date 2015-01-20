@@ -1,31 +1,20 @@
-#!/bin/sh
-# 
-# ~/.xinitrc
-#
-# Executed by startx
-# 
 
-# Merge custom X resources
-xrdb -merge "${HOME}/.Xresources"
+# Fancy stuff
+xsetroot -cursor_name left_ptr
+xrdb -merge ~/.Xresources
+sh ~/.fehbg &
 
-# Run font config? Don't know if needed.
-# Ok, figured some stuff out. Fonts are a bitch.
-
-# Run handmade script to get bitmapped fonts working.
-# fc-cache -vf ~/.fonts
-# ~/scripts/fonts
-
-# Get flux up and running
-# ~/scripts/xflux -l 42.35 -g 71.06
-
-# Set background
-feh --bg-scale ~/wallp.png &
-
-# Make sure MPD is running
+# Start mpd to enable music playing
 mpd &
 
+# Start rxvt-unicode daemon to reduce memory usage
+urxvtd -q -o -f
 
-# Start the Window Manager
+# Start dropbox daemon to sync folders
+dropboxd &
+
+# Finally, start a WM/DE
+# exec gnome-session
 exec xmonad
 
 

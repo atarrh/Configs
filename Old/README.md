@@ -1,3 +1,9 @@
+Old configuration files
+=======================
+
+[Note: these are now deprecated and no longer in use. No more updates
+will be made.]
+
 Hello there!!
 
 Within you'll find my (currently, only xmonad) config files, running in Ubuntu
@@ -9,5 +15,4 @@ modelling my own system.  Inspiration for the powerline status bar also came
 from /u/phallus, though he was running AwesomeWM, if memory serves.
 
 Enjoy the files~
-
 
