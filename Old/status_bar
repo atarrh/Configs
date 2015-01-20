@@ -1,0 +1,10 @@
+#!/bin/bash
+foreground=$1
+background=$2
+
+
+conky -qc /home/atarrh/.xmonad/conky_dzen | dzen2 -x '500' -w '1420' -h '20' -ta 'r' -bg $background -fg $foreground -y '0'
+
+
+
+

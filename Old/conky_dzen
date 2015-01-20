@@ -1,0 +1,43 @@
+
+# conky_dzen bar for system information
+
+background yes
+out_to_console yes
+out_to_x no
+override_utf8_locale yes
+update_interval 1
+total_run_times 0
+
+color0 770000
+
+
+#black
+#332d29
+#817267
+#red
+#9f7155
+
+#green
+#746c48
+#857b52
+#
+#yellow
+#908a66
+#
+#blue
+#646a6d
+
+
+
+
+TEXT
+
+^ca(1,$HOME/.xmonad/scripts/music_menu.sh)${execi 2 $HOME/.xmonad/scripts/music_dzen.sh}^ca()\
+^ca(1,$HOME/.xmonad/scripts/volum_menu.sh)${execi 2 $HOME/.xmonad/scripts/volum_dzen.sh}^ca() | \
+^ca(1,$HOME/.xmonad/scripts/batte_menu.sh)${execi 2 $HOME/.xmonad/scripts/batte_dzen.sh}^ca()\
+^ca(1,$HOME/.xmonad/scripts/hware_menu.sh)${execi 2 $HOME/.xmonad/scripts/hware_dzen.sh}^ca()\
+^ca(1,$HOME/.xmonad/scripts/clock_menu.sh)${execi 2 $HOME/.xmonad/scripts/clock_dzen.sh}^ca()
+
+
+
+

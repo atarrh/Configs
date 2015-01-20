@@ -1,0 +1,30 @@
+
+
+! Fonts / Colors
+
+#include "/home/atarrh/.colors/zebra"
+
+! *font: -*-terminesspowerline-medium-*-*-*-12-*-*-*-*-*-*-*
+! *font: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
+! *font: -*-lemon-*-*-*-17-*-*-*-*-*-*-*-*
+*font: -*-terminesspowerline-medium-*-*-*-12-*-*-*-*-*-*-*
+! *font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:antialias=true:hinting=true:size=10
+
+
+! Terminal Settings
+
+! URxvt.imLocale: pt_PT.UTF-8
+URxvt.scrollBar:        false
+URxvt.intensityStyles:  false
+
+#define X #181512
+URxvt*background: X
+
+
+! Extensions, copy/paste keybindings
+URxvt*perl-ext-common: default,matcher,clipboard
+URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+

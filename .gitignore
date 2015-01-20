@@ -1,0 +1,6 @@
+# Ignore netctl profiles to avoid publishing all of your passwords
+netctl_profiles
+
+
+
+
