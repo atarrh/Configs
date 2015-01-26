@@ -1,6 +1,7 @@
 # Ignore netctl profiles to avoid publishing all of your passwords
 netctl_profiles
 
-
+# Ignore ssh configuration file (again, for security)
+ssh_config
 
 

@@ -8,6 +8,8 @@ set shiftwidth=4
 
 set number
 
+" Spaces before cursor
+
 " Force movement keys to wrap around
 set whichwrap+=<,>,[,],h,l
 

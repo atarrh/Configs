@@ -2,14 +2,14 @@
 
 ! Fonts / Colors
 
-#include "/home/atarrh/.colors/zebra"
+#include "/home/atarrh/.colors/solarized"
 
 ! *font: -*-terminesspowerline-medium-*-*-*-12-*-*-*-*-*-*-*
 ! *font: -*-uushi-*-*-*-*-*-*-*-*-*-*-*-*
 ! *font: -*-lemon-*-*-*-17-*-*-*-*-*-*-*-*
-*font: -*-terminesspowerline-medium-*-*-*-12-*-*-*-*-*-*-*
+! *font: -*-inconsolata-medium-*-*-*-12-*-*-*-*-*-*-*
 ! *font: xft:DejaVu\ Sans\ Mono\ for\ Powerline:antialias=true:hinting=true:size=10
-
+*font: xft:Inconsolata:antialias=true:hinting=true:size=10
 
 ! Terminal Settings
 
@@ -18,13 +18,13 @@ URxvt.scrollBar:        false
 URxvt.intensityStyles:  false
 
 #define X #181512
-URxvt*background: X
+! URxvt*background: X
 
 
 ! Extensions, copy/paste keybindings
 URxvt*perl-ext-common: default,matcher,clipboard
-URxvt.keysym.C-c:   perl:clipboard:copy
-URxvt.keysym.C-v:   perl:clipboard:paste
+URxvt.keysym.C-C:   perl:clipboard:copy
+URxvt.keysym.C-V:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 
 
